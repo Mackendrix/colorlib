@@ -120,7 +120,8 @@ body{
     height: auto;
     border: 1px solid rgba(255, 255, 255, 0.29);
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #home{
     margin-top: 75px;
@@ -199,3 +200,83 @@ body{
     transition: 4.5s;
     background-size: cover;
 }
+
+/* Second section */
+#about{
+    margin-top: 75px;
+    width: 90%;
+    height: 80vh;
+    border: 0px solid gold;
+    z-index: 0;
+    display: flex;
+}
+/* Column Layout */
+.col:nth-child(1){
+    width: 40%;
+}
+
+.col:nth-child(2){
+    width: 60%;
+}
+/* First Column */
+.col h1{
+    font-size: 3.9rem;
+    font-family: serif ;
+    background: linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.col p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.326);
+    font-weight: bold;
+}
+/* First Column Buttons */
+.col .buttons{
+    border: 0px solid red;
+    display: flex;
+    width: 100%;
+    margin-top: 0.2rem;
+    justify-content: start;
+    border: 0px solid red;
+    padding: 0%;
+}
+
+.col .buttons a:nth-child(1){
+    background: rgba(0, 102, 255, 0.726);
+    color: white;
+    border: none;
+    padding: 15px ;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.col .buttons a:nth-child(2){
+    background: white;
+    color: rgba(0, 102, 255, 0.726);
+    border: 1px solid rgba(0, 102, 255, 0.726);
+    padding: 15px 25px 15px 25px;
+    margin-left: 3px;
+}
+
+.buttons a:nth-child(2):hover{
+    background: rgba(0, 102, 255, 0.726);
+    color: white;
+}
+
+
+/* Second Column */
+#about .col:nth-child(2){
+   background-image: url(images/drenched_in_colors_of_us_by_ashvillia_djde7w1-fullview.jpg);
+   background-size: cover;
+}
+
+#about .col:nth-child(2):hover{
+    background-image: url(images/file_00000000dd3072468316a1bbdfb0a5b7.png);
+    transition: 4.5s;
+    background-size: cover;
+}
+
