@@ -35,7 +35,7 @@ a{
     padding-right: 2rem;
 }
 
-ul li:nth-child(2){
+.dropdown{
     padding: 1rem;
     padding-left: 2rem;
 }
@@ -71,9 +71,48 @@ ul li:nth-child(2){
     align-items: center;
 }
 /* Dropdown Menu */
-ul li:nth-child(2):hover{
+.dropdown:hover{
     cursor: pointer;
 }
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.222);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.296);
+    width: 200px;
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    background: white;
+}
+
+.dropdown-menu li{
+    border: 0px solid green;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+}
+
+.dropdown-menu li a{
+    border: 0px solid gold;
+    margin: 0%;
+    width: 100%;
+}
+
+.dropdown-menu li a:hover{
+    background-color: rgba(0, 102, 255, 0.478);
+    transition: 0.4s;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: flex;
+}
+
+
 
 /* Section */
 body{
@@ -133,16 +172,26 @@ body{
 
 .col .buttons a:nth-child(2){
     background: white;
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0.352);
+    color: rgba(0, 102, 255, 0.726);
+    border: 1px solid rgba(0, 102, 255, 0.726);
     padding: 15px 25px 15px 25px;
     margin-left: 3px;
 }
 
+.buttons a:nth-child(2):hover{
+    background: rgba(0, 102, 255, 0.726);
+    color: white;
+}
 
 
 /* Second Column */
 .col:nth-child(2){
    background-image: url(images/file_000000003e80722f8e427c2cff105048\ \(1\).png);
    background-size: cover;
+}
+
+.col:nth-child(2):hover{
+    background-image: url(images/soundscapes__clair_de_lune_by_runecasterstudio_did1iov-fullview.jpg);
+    transition: 4.5s;
+    background-size: cover;
 }
